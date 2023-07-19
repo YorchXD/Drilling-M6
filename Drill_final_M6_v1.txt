@@ -1,0 +1,34 @@
+1) Ir a la carpeta de su preferencia y crear manualmente la carpeta del proyecto.
+   Para ello, en el CMD:  mkdir proyecto_vehiculos_django
+
+2) Cambiarse a la carpeta recién creada. En el CMD:  cd proyecto_vehiculos_django
+
+3) Crear el ambiente de Python con las características solicitadas.
+   En el CMD:  mkvirtualenv proyecto_vehiculos_django
+   
+4) Instalar la versión de Django solicitada, en el CMD:  
+	pip install Django==4.0.5
+	pip install crispy-bootstrap5==0.6
+	pip install django-crispy-forms==1.14.0
+	pip install django-bootstrap-v5==1.0.11
+
+5) Crear la app principal (se debe llamar config). En el CMD: django-admin startproject config .
+
+6) Crear la app vehiculo. En el terminal (con el ambiente activo) ejecuta: 
+	python manage.py startapp vehiculo
+
+7) Registrar la app vehiculo en el settings.py
+
+8) Ejecute las migraciones:
+	python manage.py makemigrations
+	python manage.py migrate
+
+9) En el terminal ejecute:  python manage.py createsuperuser --username admin 
+	Colocar datos del usuario indicados en la tarea
+	
+10) Inicie el servidor:  python manage.py runserver
+
+11) Ingrese a:   http://127.0.0.1:8000/admin
+
+
+	
